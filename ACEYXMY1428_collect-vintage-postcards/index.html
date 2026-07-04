@@ -8,55 +8,32 @@
     <link href="./assets/animation.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./assets/Futura-Medium.otf" rel="stylesheet" />
+
     <!-- Atlas lander tracking script — place at top of <head>. -->
-    <meta
-      http-equiv="delegate-ch"
-      content="sec-ch-ua https://trk.rusticcrumbcafe.com; sec-ch-ua-mobile https://trk.rusticcrumbcafe.com; sec-ch-ua-arch https://trk.rusticcrumbcafe.com; sec-ch-ua-model https://trk.rusticcrumbcafe.com; sec-ch-ua-platform https://trk.rusticcrumbcafe.com; sec-ch-ua-platform-version https://trk.rusticcrumbcafe.com; sec-ch-ua-bitness https://trk.rusticcrumbcafe.com; sec-ch-ua-full-version-list https://trk.rusticcrumbcafe.com; sec-ch-ua-full-version https://trk.rusticcrumbcafe.com"
-    />
-    <style>
-      .dtpcnt {
-        opacity: 0;
-      }
-    </style>
-    <script>
-      (function () {
-        try {
-          var u = new URL(location.href);
-          var cpid =
-            u.searchParams.get("cpid") ||
-            "3f58dd44-992f-467a-a81d-f044a6099c42";
-          var lpid =
-            u.searchParams.get("apid") ||
-            u.searchParams.get("lpid") ||
-            "ba4097c7-1a8e-49bc-a379-708b517ccd0f";
-          var lid = u.searchParams.get("lid") || "";
-          if (!cpid) {
-            return;
-          }
-          var s = document.createElement("script");
-          s.defer = 1;
-          s.src =
-            "https://trk.rusticcrumbcafe.com/d/.js?cpid=" +
-            encodeURIComponent(cpid) +
-            (lpid ? "&lpid=" + encodeURIComponent(lpid) : "") +
-            (lid ? "&lid=" + encodeURIComponent(lid) : "") +
-            "&lpurl=" +
-            encodeURIComponent(location.href) +
-            "&lpt=" +
-            encodeURIComponent(document.title || "") +
-            "&lpref=" +
-            encodeURIComponent(document.referrer || "") +
-            "&vtm=" +
-            Date.now();
-          document.head.appendChild(s);
-        } catch (e) {}
-      })();
-    </script>
-    <noscript
-      ><link
-        href="https://trk.rusticcrumbcafe.com/d/.js?noscript=true&lpurl="
-        rel="stylesheet"
-    /></noscript>
+<meta http-equiv="delegate-ch" content="sec-ch-ua https://trk.rusticcrumbcafe.com; sec-ch-ua-mobile https://trk.rusticcrumbcafe.com; sec-ch-ua-arch https://trk.rusticcrumbcafe.com; sec-ch-ua-model https://trk.rusticcrumbcafe.com; sec-ch-ua-platform https://trk.rusticcrumbcafe.com; sec-ch-ua-platform-version https://trk.rusticcrumbcafe.com; sec-ch-ua-bitness https://trk.rusticcrumbcafe.com; sec-ch-ua-full-version-list https://trk.rusticcrumbcafe.com; sec-ch-ua-full-version https://trk.rusticcrumbcafe.com">
+<style>.dtpcnt{opacity: 0;}</style>
+<script>
+(function(){
+try{
+var u=new URL(location.href);
+var cpid=u.searchParams.get('cpid')||'3f58dd44-992f-467a-a81d-f044a6099c42';
+var lpid=u.searchParams.get('apid')||u.searchParams.get('lpid')||'ba4097c7-1a8e-49bc-a379-708b517ccd0f';
+var lid=u.searchParams.get('lid')||'';
+if(!cpid){return;}
+var s=document.createElement('script');
+s.defer=1;
+s.src='https://trk.rusticcrumbcafe.com/d/.js?cpid='+encodeURIComponent(cpid)
++(lpid?'&lpid='+encodeURIComponent(lpid):'')
++(lid?'&lid='+encodeURIComponent(lid):'')
++'&lpurl='+encodeURIComponent(location.href)
++'&lpt='+encodeURIComponent(document.title||'')
++'&lpref='+encodeURIComponent(document.referrer||'')
++'&vtm='+Date.now();
+document.head.appendChild(s);
+}catch(e){}
+})();
+</script>
+<noscript><link href="https://trk.rusticcrumbcafe.com/d/.js?noscript=true&lpurl=" rel="stylesheet"/></noscript>
 
     <style>
       @font-face {
